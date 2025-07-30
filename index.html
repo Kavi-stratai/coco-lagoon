@@ -270,7 +270,7 @@
   async function fetchReviews() {
     try {
       // 👇 Cache-busting added here
-      const res = await fetch("https://script.google.com/macros/s/AKfycbymMJsH6045H76OAq0vGthIzLIYlfotGVYw2YMazJm16LAtNpV3in7LOE5ImiEu_3Ot/exec?cacheBust=" + Date.now());
+      const res = await fetch("https://script.google.com/macros/s/AKfycbzCUa2j8pSz_cr4HUQIRvHJ40IGU8UhJRJXxUpiapm1zJ7vZWumjoDQ-bm5D18SCCNo/exec?cacheBust=" + Date.now());
       const data = await res.json();
       const latest = data[data.length - 1];
 
